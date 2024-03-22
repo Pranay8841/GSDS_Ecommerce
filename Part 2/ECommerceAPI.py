@@ -21,12 +21,10 @@ products = [
 # Temporary cart data stored in a Python dictionary for each user
 carts = {}
 
-
 # Routes for handling different API endpoints
 @app.route('/display_products', methods=['GET'])
 def get_products():
     return jsonify(products)
-
 
 @app.route('/display_product/<int:product_id>', methods=['GET'])
 def get_product(product_id):
@@ -35,7 +33,6 @@ def get_product(product_id):
         return jsonify(product)
     else:
         return jsonify({'message': 'Product not found'}), 403
-
 
 @app.route('/add_product', methods=['POST'])
 def add_product():
@@ -52,9 +49,7 @@ def add_product():
     products.append(new_product)
     return jsonify(new_product), 201
 
-
 from flask import request, jsonify
-
 
 # Search route to search for products based on a keyword
 @app.route('/search_products', methods=['GET'])
@@ -74,13 +69,12 @@ def search_products():
 
     return jsonify(matching_products)
 
-
 @app.route('/cart/view', methods=['GET'])
 def view_cart():
     # Get the user_id from the query parameter
     user_id = request.args.get('user_id')
     print(user_id)
-
+    
     # Check if user_id is provided
     if user_id is None:
         return jsonify({'error': 'user_id parameter is missing'}), 400
@@ -107,9 +101,9 @@ def view_cart():
                 'quantity': quantity,
                 'item_total': item_total
             })
-
+    
     print(cart_items)
-
+    
     # Prepare the response
     response_data = {
         'cart_items': cart_items,
@@ -118,7 +112,6 @@ def view_cart():
 
     # Return the response as JSON
     return jsonify(response_data)
-
 
 @app.route('/cart/add', methods=['POST'])
 def add_to_cart():
@@ -140,7 +133,6 @@ def add_to_cart():
 
     return jsonify(cart)
 
-
 # @app.route('')
 
 @app.route('/cart/delete', methods=['POST'])
@@ -157,7 +149,7 @@ def delete_from_cart():
     else:
         return jsonify({'error': 'Product not found in the cart'}), 404
 
-
 print(carts)
 if __name__ == '__main__':
     app.run(debug=True)
+
