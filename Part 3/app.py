@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 # Sample data for products and cart
 products = [
-     {"id": 4, "name": "iPhone 13", "price": 999, "description": "The latest iPhone."},
+    {"id": 4, "name": "iPhone 13", "price": 999, "description": "The latest iPhone."},
     {"id": 5, "name": "MacBook Pro", "price": 1499, "description": "Powerful laptop by Apple."},
     {"id": 6, "name": "iPad Air", "price": 599, "description": "Thin and light iPad."},
 ]
