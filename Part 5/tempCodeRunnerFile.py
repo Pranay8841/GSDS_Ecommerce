@@ -1,0 +1,1 @@
+mongodb+srv://pranaybhandekar8841:73gUQjssxcijpJDD@cluster2.cnwqzic.mongodb.net/E-Commerce
