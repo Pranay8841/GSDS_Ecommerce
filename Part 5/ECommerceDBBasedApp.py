@@ -3,13 +3,11 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb+srv://pranaybhandekar8841:73gUQjssxcijpJDD@cluster2.cnwqzic.mongodb.net/")
+client = MongoClient("mongodb+srv://virajkunjir:MNnYOluCIdZzDwBE@cluster0.lb7hg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") 
 
-db = client["e-commerce"]  # 
+db = client["e-commerce"]  # Replace with your MongoDB database name
 products_collection = db["products"]
 carts_collection = db["carts"]
-
-
 
 # Initialize a list of products with unique IDs
 products = [
