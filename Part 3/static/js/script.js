@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchForm = document.getElementById("search-form");
   const searchResults = document.getElementById("search-results");
 
-  // Function to handle search form submission
+  // Function to handle search form
   async function searchProducts(event) {
     event.preventDefault();
 
@@ -167,6 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(`/search_products?keyword=${searchInput}`);
+      console.log();
       if (!response.ok) {
         throw new Error("Failed to search for products.");
       }
@@ -386,4 +387,84 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const viewCartButton = document.getElementById("view-cart-btn");
   viewCartButton.addEventListener("click", viewCart);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("registration-form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm-password").value;
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match!");
+      return;
+    }
+
+    // Create a FormData object and append form data
+    const formData = new FormData();
+    formData.append("username", username);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("password", password);
+
+    // Send a POST request to the server
+    fetch("/register", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        // Redirect to the login page after successful registration
+        window.location.href = "/signin"; // Redirect to the login page
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("login-form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Send a POST request to the server
+    fetch("/login", {
+      method: "POST",
+      body: JSON.stringify({ email: email, password: password }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        // Redirect the user to the home page with the user_id parameter
+        window.location.href = `/?user_id=${data.user_id}`;
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  });
 });
