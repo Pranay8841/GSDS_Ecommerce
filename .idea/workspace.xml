@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e551291-a7ea-4dcd-9192-7b61cc64f682" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Green Software Development.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Green Software Development.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/about/1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/about/a1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/about/a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/about/a3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/about/a4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/about/a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/about/a6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/about/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/banner/b7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/blog/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/blog/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/blog/b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/blog/b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/blog/b5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/blog/b6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/blog/b7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/features/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/features/f2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/features/f3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/features/f4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/features/f5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/features/f6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/hero4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/pay/app.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/pay/pay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/pay/play.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/people/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/people/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/people/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/f3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/f5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/f6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/f7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/f8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/n1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/n2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/n3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/n4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/n5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/n6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/n7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/img/products/n8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/templates/product.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2eahnBMqAVRVKnHXFxjtht2iblC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.app.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Part5",
+    "ignore.virus.scanning.warn.message": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e551291-a7ea-4dcd-9192-7b61cc64f682" name="Changes" comment="" />
+      <created>1712148764723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712148764723</updated>
+      <workItem from="1712148767188" duration="65000" />
+      <workItem from="1712148897364" duration="68000" />
+      <workItem from="1712149035417" duration="215000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ECommerceDBBasedApp_py$app.coverage" NAME="app Coverage Results" MODIFIED="1712149215574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Part 3" />
+  </component>
+</project>
