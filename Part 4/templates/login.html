@@ -9,7 +9,7 @@
 
   <style>
     .backBtn {
-      max-width: 100px;
+      /* max-width: 100px; */
       display: block;
       text-align: center;
       padding: 10px 15px;
@@ -18,14 +18,23 @@
       border: 1px solid #155e75;
       text-decoration: none;
       cursor: pointer;
-      color: white;
+      color: #111;
       font-weight: 600;
       border-radius: 10px;
     }
 
     .backBtn:hover {
-      background-color: white;
-      color: black;
+      background-color: #155e75;
+      color: white;
+    }
+
+    footer {
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
 
     .btn {
@@ -36,25 +45,37 @@
 
 <body>
 
-  <section class="navbar">
-    <div class="logo">
-      <img src="../static/img/E_Commerce_logo.png" alt="logo" width="250" height="60">
-    </div>
+  <div class="header">
+    <div class="container">
+      <section class="navbar">
+        <div class="logo">
+          <img src="../static/img/logo.png " alt="logo" width="125px" />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a class="active" href="/?user_id={{ user_id }}">Home</a></li>
+            {% if not user_id %}
+            <li><a href="/signin">Sign In</a></li>
+            <li><a href="/signup">Signup</a></li>
+            {% else %}
+            <li><a href="/carts?user_id={{ user_id }}">Cart</a></li>
+            <li><a href="/transaction?user_id={{ user_id }}">Transaction</a></li>
+            <li><a href="/profile?user_id={{ user_id }}">Profile</a></li>
+            <li><a href="/contact?user_id={{ user_id }}">Contact Us</a></li>
+            <li><a href="/aboutus?user_id={{ user_id }}">About Us</a></li>
+            <li><a href="/logout">Logout</a></li>
+            {% endif %}
+          </ul>
+        </nav>
 
-    <ul class="nav-links">
-      <li><a class="active" href="/?user_id={{ user_id }}">Home</a></li>
-      <li><a href="/contact?user_id={{user_id}}">Contact Us</a></li>
-      <li><a href="/aboutus?user_id={{user_id}}">About Us</a></li>
-      {% if not user_id %}
-      <li><a href="/signin">Sign In</a></li>
-      <li><a href="/signup">Signup</a></li>
-      {% endif %}
-    </ul>
-    <form id="search-form">
-      <input type="text" id="search" name="search" placeholder="Search for products" required />
-      <button type="submit">Search</button>
-    </form>
-  </section>
+        <form id="search-form">
+          <input type="text" id="search" name="search" placeholder="Search for products" required />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
 
   <div class="login-container">
     <h1>Login</h1>
@@ -79,7 +100,7 @@
   <footer class="footer">
     <div class="container">
       <hr class="footer-line" />
-      <p>&copy; 2024 Owner Viraj Kunjir. All rights reserved.</p>
+      <p>Made with ❤️ Pranay Bhandekar © 2024 Red Store</p>
     </div>
   </footer>
 
