@@ -36,13 +36,14 @@
       }
 
       .contact-section h2 {
-        color: white;
+        color: #111;
         font-size: 24px;
         margin-bottom: 10px;
       }
 
       .contact-info p {
-        color: #c4c2c2;
+        color: #3a3939;
+        line-height: 30px;
       }
 
       .contact-info p:first-child {
@@ -54,24 +55,24 @@
       }
 
       .backBtn {
-        max-width: 100px;
-        display: block;
-        text-align: center;
-        padding: 10px 15px;
-        margin: auto;
-        margin-top: 20px;
-        border: 1px solid #155e75;
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        font-weight: 600;
-        border-radius: 10px;
-      }
+      /* max-width: 100px; */
+      display: block;
+      text-align: center;
+      padding: 10px 15px;
+      margin: auto;
+      margin-top: 20px;
+      border: 1px solid #155e75;
+      text-decoration: none;
+      cursor: pointer;
+      color: #111;
+      font-weight: 600;
+      border-radius: 10px;
+    }
 
-      .backBtn:hover {
-        background-color: white;
-        color: black;
-      }
+    .backBtn:hover {
+      background-color: #155e75;
+      color: white;
+    }
 
       footer {
         color: #fff;
@@ -85,42 +86,36 @@
   </head>
 
   <body>
-    <section class="navbar">
-      <div class="logo">
-        <img
-          src="../static/img/E_Commerce_logo.png"
-          alt="logo"
-          width="250"
-          height="60"
-        />
+    <div class="header">
+      <div class="container">
+        <section class="navbar">
+          <div class="logo">
+            <img src="../static/img/logo.png " alt="logo" width="125px" />
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li><a class="active" href="/?user_id={{ user_id }}">Home</a></li>
+              {% if not user_id %}
+              <li><a href="/signin">Sign In</a></li>
+              <li><a href="/signup">Signup</a></li>
+              {% else %}
+              <li><a href="/carts?user_id={{ user_id }}">Cart</a></li>
+              <li><a href="/transaction?user_id={{ user_id }}">Transaction</a></li>
+              <li><a href="/profile?user_id={{ user_id }}">Profile</a></li>
+              <li><a href="/contact?user_id={{ user_id }}">Contact Us</a></li>
+              <li><a href="/aboutus?user_id={{ user_id }}">About Us</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% endif %}
+            </ul>
+          </nav>
+  
+          <form id="search-form">
+            <input type="text" id="search" name="search" placeholder="Search for products" required />
+            <button type="submit">Search</button>
+          </form>
+        </section>
       </div>
-
-      <ul class="nav-links">
-        <li><a class="active" href="/?user_id={{ user_id }}">Home</a></li>
-        {% if not user_id %}
-        <li><a href="/signin">Sign In</a></li>
-        <li><a href="/signup">Signup</a></li>
-        {% else %}
-        <li><a href="/carts?user_id={{ user_id }}">Cart</a></li>
-        <li><a href="/transaction?user_id={{ user_id }}">Transaction</a></li>
-        <li><a href="/profile?user_id={{ user_id }}">Profile</a></li>
-        <li><a href="/logout">Logout</a></li>
-        <li><a href="/contact?user_id={{ user_id }}">Contact Us</a></li>
-        <li><a href="/aboutus?user_id={{ user_id }}">About Us</a></li>
-        {% endif %}
-      </ul>
-
-      <form id="search-form">
-        <input
-          type="text"
-          id="search"
-          name="search"
-          placeholder="Search for products"
-          required
-        />
-        <button type="submit">Search</button>
-      </form>
-    </section>
+    </div>
 
     <header>
       <h1>Contact Us</h1>
@@ -135,11 +130,11 @@
         <a href="/?user_id={{ user_id }}" class="backBtn">Back</a>
       </section>
     </main>
-    <!-- Footer -->
-    <footer class="footer">
+     <!-- Footer -->
+     <footer class="footer">
       <div class="container">
         <hr class="footer-line" />
-        <p>&copy; 2024 Owner Viraj Kunjir. All rights reserved.</p>
+        <p>Made with ❤️ Pranay Bhandekar © 2024 Red Store</p>
       </div>
     </footer>
   </body>
